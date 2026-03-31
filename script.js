@@ -282,13 +282,12 @@
     // --------------------------------------------------------------
     // 8. DOWNLOAD CV
     // --------------------------------------------------------------
-    const cvBtn = document.getElementById('downloadCvBtn');
     if (cvBtn) {
-        cvBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('📄 CV demo: In a real scenario, your PDF would download. (Offline version ready)');
-        });
-    }
+    cvBtn.addEventListener('click', () => {
+        alert('Your download is starting!');
+        // No e.preventDefault() here, so the download proceeds!
+    });
+}
     
     // --------------------------------------------------------------
     // 9. BACK TO TOP
