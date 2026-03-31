@@ -282,10 +282,14 @@
     // --------------------------------------------------------------
     // 8. DOWNLOAD CV
     // --------------------------------------------------------------
-    if (cvBtn) {
+ // --------------------------------------------------------------
+// 8. DOWNLOAD CV (Updated to allow download)
+// --------------------------------------------------------------
+const cvBtn = document.getElementById('downloadCvBtn');
+if (cvBtn) {
     cvBtn.addEventListener('click', () => {
-        alert('Your download is starting!');
-        // No e.preventDefault() here, so the download proceeds!
+        // We removed e.preventDefault() so the file actually downloads now!
+        console.log("Download started...");
     });
 }
     
